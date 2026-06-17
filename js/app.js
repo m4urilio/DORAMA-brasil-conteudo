@@ -95,7 +95,7 @@ function renderGrid() {
 /* ---------- Player Modal ---------- */
 function openPlayer(index) {
     var video = videos[index];
-    playerIframe.src = 'https://www.youtube.com/embed/' + video.id + '?autoplay=1&rel=0';
+    playerIframe.src = 'https://www.youtube.com/embed/' + video.id + '?autoplay=1&rel=0&controls=0&modestbranding=1&showinfo=0&iv_load_policy=3&disablekb=1';
     document.getElementById('modal-title').textContent = video.title;
     document.getElementById('modal-channel').textContent = video.channel;
 
