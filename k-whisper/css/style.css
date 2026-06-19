@@ -246,7 +246,7 @@
     animation: kwSlideIn 0.35s ease;
 }
 
-.kw-msg-avatar {
+img.kw-msg-avatar {
     width: 30px;
     height: 30px;
     border-radius: 50%;
