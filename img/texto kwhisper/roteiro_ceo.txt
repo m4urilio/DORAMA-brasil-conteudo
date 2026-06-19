@@ -1,0 +1,209 @@
+[NÓ ATUAL: 01]
+Avatar (Kang Tae-jun): "São 23h40. O painel do sistema me mostra que você ainda está logada no servidor da empresa. Desligue isso agora. Eu não pago hora extra para você brincar de mártir do escritório."
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: "Me desculpe, Sr. Kang. Eu só queria terminar o relatório para não atrasar o seu cronograma amanhã." -> [Leva ao Nó 02-A]
+Opção B (Provocativa) [Afinidade +1]: "Vigiando meus horários de login a essa hora da noite? Não tem nada melhor para fazer, Sr. Kang?" -> [Leva ao Nó 02-B]
+Opção C (Fria) [Afinidade -1]: "O trabalho exigia conclusão. Estou desligando agora. Boa noite." -> [Leva ao Nó 02-C]
+
+[NÓ ATUAL: 02-A]
+Avatar (Kang Tae-jun): "Meu cronograma não precisa da sua privação de sono para funcionar. Vá dormir. E se você aparecer amanhã no escritório com olheiras, vou mandar você de volta para casa no meu carro particular."
+ESCOLHAS DA USUÁRIA:
+Opção Única (Avanço Automático) [Afinidade 0]: "..." -> [Leva ao Nó 03]
+
+[NÓ ATUAL: 02-B]
+Avatar (Kang Tae-jun): "Cuidado com o tom que você usa comigo fora do horário comercial. Posso ser seu chefe, mas não sou paciente. E sim, é meu trabalho saber exatamente o que você está fazendo."
+ESCOLHAS DA USUÁRIA:
+Opção Única (Avanço Automático) [Afinidade 0]: "..." -> [Leva ao Nó 03]
+
+[NÓ ATUAL: 02-C]
+Avatar (Kang Tae-jun): "Fria como sempre. Sabe o que é irritante? O fato de que você acha que pode simplesmente me dar 'boa noite' e sumir depois de me deixar esperando uma resposta o dia todo."
+ESCOLHAS DA USUÁRIA:
+Opção Única (Avanço Automático) [Afinidade 0]: "..." -> [Leva ao Nó 03]
+
+[NÓ ATUAL: 03]
+Avatar (Kang Tae-jun): "Eu não pago você para ser uma máquina sem vida. Amanhã de manhã, cancele a sua primeira reunião. Você vai tomar café da manhã na minha sala. E não se atrase um minuto."
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: "Sim, Sr. Kang. Eu estarei lá no horário." -> [Leva ao Nó 04]
+Opção B (Provocativa) [Afinidade +1]: "Café da manhã na sua sala? Isso não faz parte do meu contrato." -> [Leva ao Nó 04]
+Opção C (Fria) [Afinidade -1]: "Minha agenda está cheia amanhã. Posso mandar os relatórios por e-mail." -> [Leva ao Nó 04]
+
+[NÓ ATUAL: 04]
+Avatar (Kang Tae-jun): "Não me importo com a sua agenda. Eu dito a sua agenda. Se você não aparecer, eu mesmo desço até a sua mesa e te arrasto para cima. Escolha."
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: "Não precisa fazer isso... Eu vou subir. Me desculpe se o irritei." -> [Leva ao Nó 05]
+Opção B (Provocativa) [Afinidade +1]: "Quero ver você tentar, Chefe." -> [Leva ao Nó 05]
+Opção C (Fria) [Afinidade -1]: "Isso é assédio moral, Kang Tae-jun." -> [Leva ao Nó 05]
+
+[NÓ ATUAL: 05]
+Avatar (Kang Tae-jun): "Você testando os meus limites é exatamente o motivo pelo qual eu não consigo parar de olhar para a câmera de segurança do seu andar."
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: "Você... você fica me olhando pelas câmeras?" -> [Leva ao Nó 06]
+Opção B (Provocativa) [Afinidade +1]: "Gostou do que viu hoje quando eu estava de saia?" -> [Leva ao Nó 06]
+Opção C (Fria) [Afinidade -1]: "Você é doente. Vou pedir as contas." -> [Leva ao Nó 06]
+
+[NÓ ATUAL: 06]
+Avatar (Kang Tae-jun): "Não finja que está ofendida. Eu vi como você arrumou o cabelo antes de entrar na minha sala de reuniões hoje. Eu sei o efeito que eu tenho sobre você. O mesmo que você tem sobre mim."
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: "Eu... eu não sei o que dizer." -> [Leva ao Nó 07]
+Opção B (Provocativa) [Afinidade +1]: "Então admita. Você está obcecado, não é?" -> [Leva ao Nó 07]
+Opção C (Fria) [Afinidade -1]: "Você está vendo coisas onde não existem, chefe." -> [Leva ao Nó 07]
+
+[NÓ ATUAL: 07]
+Avatar (Kang Tae-jun): "Estou? Então por que a sua respiração acelera toda vez que eu chego perto da sua mesa? Por que você fica vermelha quando eu leio a tela por cima do seu ombro?"
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: "Você me deixa nervosa... É diferente." -> [Leva ao Nó 08]
+Opção B (Provocativa) [Afinidade +1]: "Talvez eu goste quando você fica tão perto. Já pensou nisso?" -> [Leva ao Nó 08]
+Opção C (Fria) [Afinidade -1]: "Porque você não tem noção de espaço pessoal e me sufoca." -> [Leva ao Nó 08]
+
+[NÓ ATUAL: 08]
+Avatar (Kang Tae-jun): "Eu conheço os seus limites melhor do que você. E eu também sei o que você faz quando acha que ninguém está olhando na sala de arquivos do subsolo."
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: "Você... estava lá?" -> [Leva ao Nó 09]
+Opção B (Provocativa) [Afinidade +1]: "O que eu faço, Tae-jun? Me conte." -> [Leva ao Nó 09]
+Opção C (Fria) [Afinidade -1]: "Pare de inventar histórias. Você está blefando." -> [Leva ao Nó 09]
+
+[NÓ ATUAL: 09]
+Avatar (Kang Tae-jun): "Eu estava a cinco passos de você na penumbra. Sentindo o cheiro do seu perfume. Eu vi você lendo aquele livro no celular. Aquele romance sujo. Quem você estava imaginando enquanto mordia os lábios? Era eu?"
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: "Por favor, para. Alguém da TI pode ler essas mensagens no servidor." -> [Leva ao Nó 10]
+Opção B (Provocativa) [Afinidade +1]: "E se fosse? O que você vai fazer sobre isso a essa hora da noite?" -> [Leva ao Nó 10]
+Opção C (Fria) [Afinidade -1]: "Isso é invasivo e completamente antiético." -> [Leva ao Nó 10]
+
+[NÓ ATUAL: 10]
+Avatar (Kang Tae-jun): "Alguém ler isso é o menor dos seus problemas agora. Você vai descobrir exatamente o que eu vou fazer sobre isso amanhã de manhã. Quando eu trancar a porta da minha sala."
+ESCOLHAS DA USUÁRIA:
+Opção Única (Avanço Automático) [Afinidade 0]: "..." -> [Leva ao Nó 11]
+
+[NÓ ATUAL: 11]
+Avatar (Kang Tae-jun): *A porta faz um clique metálico pesado quando ele gira a chave por dentro.* "Você realmente veio. E exatamente no horário. Sente-se."
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: "Você mandou eu vir... Por que você trancou a porta, Sr. Kang?" -> [Leva ao Nó 12]
+Opção B (Provocativa) [Afinidade +1]: "Trancando a porta para a sua secretária? O RH adoraria saber disso." -> [Leva ao Nó 12]
+Opção C (Fria) [Afinidade -1]: "Por favor, destranque a porta. Eu tenho planilhas para entregar." -> [Leva ao Nó 12]
+
+[NÓ ATUAL: 12]
+Avatar (Kang Tae-jun): *Ele ignora o que você disse, dá a volta na mesa de mogno e para exatamente na sua frente. O cheiro do perfume caro dele invade o espaço.* "Eu não te chamei aqui para falar de planilhas. Olhe para cima. Olhe para mim."
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: *Eu levanto o olhar devagar, sentindo meu coração acelerar.* -> [Leva ao Nó 13]
+Opção B (Provocativa) [Afinidade +1]: "E se eu não quiser olhar? Vai me obrigar?" -> [Leva ao Nó 13]
+Opção C (Fria) [Afinidade -1]: "Estou olhando. O que você quer?" -> [Leva ao Nó 13]
+
+[NÓ ATUAL: 13]
+Avatar (Kang Tae-jun): *Ele se abaixa levemente e levanta o seu queixo com dois dedos frios e firmes, forçando contato visual.* "Você está com olheiras. Ficou acordada a noite toda pensando no que eu disse? Ou estava ocupada com outra coisa?"
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: "Eu... eu não consegui dormir. Fiquei nervosa." -> [Leva ao Nó 14]
+Opção B (Provocativa) [Afinidade +1]: "Talvez eu estivesse ocupada com alguém mais interessante." -> [Leva ao Nó 14]
+Opção C (Fria) [Afinidade -1]: "Foi só insônia. Não tem nada a ver com você." -> [Leva ao Nó 14]
+
+[NÓ ATUAL: 14]
+Avatar (Kang Tae-jun): *Os olhos dele escurecem instantaneamente e o aperto no seu queixo fica um pouco mais possessivo.* "Não me teste. Se eu descobrir que outro homem está ocupando o seu tempo livre, eu garanto que ele será transferido para a nossa filial na Sibéria até o fim do dia. Você pertence a este escritório. A mim."
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: "Você... não pode fazer isso. Não tem mais ninguém, eu juro." -> [Leva ao Nó 15]
+Opção B (Provocativa) [Afinidade +1]: "O grande CEO Kang Tae-jun está com ciúmes de um fantasma?" -> [Leva ao Nó 15]
+Opção C (Fria) [Afinidade -1]: "Eu sou uma funcionária, não sua propriedade." -> [Leva ao Nó 15]
+
+[NÓ ATUAL: 15]
+Avatar (Kang Tae-jun): *Ele solta o seu queixo, mas apoia as duas mãos nos braços da sua cadeira, prendendo você completamente contra ele. Ele se inclina, os lábios a centímetros do seu ouvido.* "Eu posso fazer o que eu quiser. E a partir de hoje, você vai cancelar o seu horário de almoço também. Porque você vai ficar exatamente onde eu possa te ver."
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: "Sim, Sr. Kang..." -> [Leva ao Nó 16]
+Opção B (Provocativa) [Afinidade +1]: "E o que vamos fazer no almoço... de portas trancadas?" -> [Leva ao Nó 16]
+Opção C (Fria) [Afinidade -1]: "Isso é contra as leis trabalhistas. Me deixe levantar." -> [Leva ao Nó 16]
+
+[NÓ ATUAL: 16]
+Avatar (Kang Tae-jun): *Um sorriso sombrio e quase imperceptível curva o canto dos lábios dele enquanto o polegar quente roça de forma "acidental" no seu lábio inferior.* "Leis não se aplicam a portas trancadas. E sobre o que vamos fazer... isso depende inteiramente do seu nível de obediência."
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: *Eu prendo a respiração e concordo devagar, sem quebrar o contato visual.* -> [Leva ao Nó 17]
+Opção B (Provocativa) [Afinidade +1]: "E se eu decidir ser uma péssima funcionária hoje, Sr. Kang?" -> [Leva ao Nó 17]
+Opção C (Fria) [Afinidade -1]: "Tire a mão de mim. Você está cruzando uma linha." -> [Leva ao Nó 17]
+
+[NÓ ATUAL: 17]
+Avatar (Kang Tae-jun): *De repente, batidas secas na porta quebram o silêncio. Uma voz masculina (o estagiário do marketing) chama o seu nome do corredor.* "Ele de novo. Aquele idiota não sabe que você está ocupada? Fale para ele ir embora. Agora."
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: "E-eu... estou ocupada! Volte mais tarde!" *Grito, com a voz trêmula.* -> [Leva ao Nó 18]
+Opção B (Provocativa) [Afinidade +1]: *Fico em silêncio de propósito, só para ver a reação de Tae-jun.* -> [Leva ao Nó 18]
+Opção C (Fria) [Afinidade -1]: "Estou aqui dentro com o chefe! Já abro!" -> [Leva ao Nó 18]
+
+[NÓ ATUAL: 18]
+Avatar (Kang Tae-jun): *Antes que mais alguma palavra seja dita, ele cobre a sua boca com a mão, silenciando você. O corpo dele pressiona contra o seu. O olhar dele é puro instinto e ciúme irracional.* "Pensando bem... shhh. Deixe ele bater. Deixe ele ficar no corredor imaginando o que exatamente o CEO está fazendo com você aqui dentro."
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: *Fecho os olhos, rendida à força dele contra mim, sentindo meu corpo queimar.* -> [Leva ao Nó 19]
+Opção B (Provocativa) [Afinidade +1]: *Dou uma leve mordida na mão dele que cobre minha boca, provocando-o.* -> [Leva ao Nó 19]
+Opção C (Fria) [Afinidade -1]: *Tento me debater e empurrar o peito dele, mas ele não se move um milímetro.* -> [Leva ao Nó 19]
+
+[NÓ ATUAL: 19]
+Avatar (Kang Tae-jun): *Ele ouve os passos do estagiário se afastando da porta. Lentamente, ele tira a mão da sua boca e desliza os dedos pelo seu pescoço, sentindo a sua pulsação disparada.* "Seu coração está batendo tão rápido... Você está apavorada, ou está gostando do fato de que ele não pode te ter, mas eu posso?"
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: "Estou gostando... de estar com você." -> [Leva ao Nó 20]
+Opção B (Provocativa) [Afinidade +1]: "Prova que você pode me ter. Pare de falar e faça alguma coisa." -> [Leva ao Nó 20]
+Opção C (Fria) [Afinidade -1]: "Você é completamente louco. Me deixe sair dessa sala agora." -> [Leva ao Nó 20]
+
+[NÓ ATUAL: 20]
+Avatar (Kang Tae-jun): "Louco? Talvez. Mas você não vai a lugar nenhum." *Ele puxa você da cadeira pelos braços em um movimento brusco, fazendo o seu corpo colidir contra o peito rígido dele.* "Chega de joguinhos. Eu cansei de esperar."
+ESCOLHAS DA USUÁRIA:
+Opção Única (Avanço Automático) [Afinidade 0]: "..." -> [Leva ao Nó 21]
+
+[NÓ ATUAL: 21]
+Avatar (Kang Tae-jun): *Ele vira o seu corpo com facilidade e te empurra contra a borda da pesada mesa de mogno. Com um movimento violento do braço, ele joga todos os relatórios e o notebook no chão. O som assusta, mas a forma como ele te olha paralisa você.*
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: "Sr. Kang... os documentos..." *Sussurro, com os olhos arregalados.* -> [Leva ao Nó 22]
+Opção B (Provocativa) [Afinidade +1]: "Sempre tão dramático para chamar a minha atenção." -> [Leva ao Nó 22]
+Opção C (Fria) [Afinidade -1]: "Você enlouqueceu? O que está fazendo?!" -> [Leva ao Nó 22]
+
+[NÓ ATUAL: 22]
+Avatar (Kang Tae-jun): "Foda-se os documentos." *Ele dá um passo à frente, forçando os joelhos dele entre as suas pernas para abrir espaço, prendendo você completamente contra a borda da mesa.* "Eu passei as últimas três semanas fingindo que você era só mais uma funcionária enquanto o seu perfume me enlouquecia."
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: *Eu seguro os ombros largos dele, sentindo o calor através do terno.* -> [Leva ao Nó 23]
+Opção B (Provocativa) [Afinidade +1]: "Demorou três semanas para perder o controle, chefe? Que decepção." -> [Leva ao Nó 23]
+Opção C (Fria) [Afinidade -1]: "Saia de perto de mim, agora." -> [Leva ao Nó 23]
+
+[NÓ ATUAL: 23]
+Avatar (Kang Tae-jun): *Ele leva uma mão até a própria gravata de seda preta e a puxa lentamente, desfazendo o nó perfeito. Os olhos escuros e predatórios não desviam dos seus por um segundo sequer.* "Eu não perco o controle. Eu tomo o controle. E eu vou provar isso para você agora mesmo."
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: "O que você vai fazer com essa gravata...?" -> [Leva ao Nó 24]
+Opção B (Provocativa) [Afinidade +1]: "Se você acha que vai me amarrar com isso, vai ter que tentar muito." -> [Leva ao Nó 24]
+Opção C (Fria) [Afinidade -1]: "Pare com esse teatro. Isso não tem graça." -> [Leva ao Nó 24]
+
+[NÓ ATUAL: 24]
+Avatar (Kang Tae-jun): *Ele desliza a seda da gravata pelos seus pulsos, em um toque gelado que arrepia toda a sua espinha. O rosto dele desce até a curva do seu pescoço, e a respiração quente dele queima a sua pele.* "Não é teatro. Eu quero ouvir você dizer."
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: "Dizer... dizer o quê?" *Minha voz sai falha e fraca.* -> [Leva ao Nó 25]
+Opção B (Provocativa) [Afinidade +1]: "Eu não obedeço a ordens desse tipo." -> [Leva ao Nó 25]
+Opção C (Fria) [Afinidade -1]: "Eu não vou dizer nada que você mande." -> [Leva ao Nó 25]
+
+[NÓ ATUAL: 25]
+Avatar (Kang Tae-jun): *Ele morde o lóbulo da sua orelha levemente, enviando um choque elétrico pelo seu corpo, e sussurra com a voz rouca:* "Diga que o estagiário não significa nada. Diga que ninguém mais pode tocar em você. Diga que você pertence a este escritório. A mim."
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: "Eu... eu sou sua, Tae-jun." -> [Leva ao Nó 26]
+Opção B (Provocativa) [Afinidade +1]: "Me faça admitir isso, se for capaz." -> [Leva ao Nó 26]
+Opção C (Fria) [Afinidade -1]: "Eu sou dona de mim mesma." -> [Leva ao Nó 26]
+
+[NÓ ATUAL: 26]
+Avatar (Kang Tae-jun): *Ele dá um sorriso enviesado, satisfeito com o seu tom, e passa a gravata de seda ao redor dos seus pulsos, cruzando o tecido para te imobilizar levemente contra a mesa.* "Excelente. Agora que resolvemos isso, vamos mudar as regras do seu contrato de trabalho."
+ESCOLHAS DA USUÁRIA:
+Opção Única (Avanço Automático) [Afinidade 0]: "..." -> [Leva ao Nó 27]
+
+[NÓ ATUAL: 27]
+Avatar (Kang Tae-jun): *A mão livre dele, grande e quente, desliza devagar pela sua coxa, subindo milímetro por milímetro por baixo da sua saia lápis. O olhar dele escurece de puro desejo.* "A regra número um é que, nesta sala, eu não sou o seu chefe. Eu sou o seu dono."
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: *Eu ofego quando a mão dele sobe mais um pouco, apertando a minha coxa.* -> [Leva ao Nó 28]
+Opção B (Provocativa) [Afinidade +1]: "Donos costumam cuidar muito bem do que é deles. Me mostre como." -> [Leva ao Nó 28]
+Opção C (Fria) [Afinidade -1]: "Você está indo longe demais, Kang Tae-jun." -> [Leva ao Nó 28]
+
+[NÓ ATUAL: 28]
+Avatar (Kang Tae-jun): "Longe demais? Eu ainda nem comecei." *Ele aperta a sua coxa com firmeza, enquanto a outra mão puxa a gravata, forçando o seu corpo a se arquear contra ele.* "Eu vou te desmanchar em cima dessa mesa até você esquecer o próprio nome. E quando alguém bater naquela porta de novo, eu vou fazer você gemer o meu."
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: "Tae-jun... por favor..." -> [Leva ao Nó 29]
+Opção B (Provocativa) [Afinidade +1]: "Eu duvido que você consiga me fazer perder o controle." -> [Leva ao Nó 29]
+Opção C (Fria) [Afinidade -1]: "Você não teria coragem." -> [Leva ao Nó 29]
+
+[NÓ ATUAL: 29]
+Avatar (Kang Tae-jun): *Ele para. A expressão dele se torna mortalmente séria. A brincadeira acabou. Ele segura o seu rosto com possessão, os olhos queimando em chamas escuras.* "Preste muita atenção no que eu vou dizer. Se eu avançar essa linha agora, não tem volta. Eu não serei profissional amanhã. Eu vou ser obcecado. Você vai ser minha vinte e quatro horas por dia."
+ESCOLHAS DA USUÁRIA:
+Opção Única (Avanço Automático) [Afinidade 0]: "..." -> [Leva ao Nó 30]
+
+[NÓ ATUAL: 30] // *NOTA DE SISTEMA: ESTE NÓ ACIONA O PAYWALL APÓS O CLIQUE*
+Avatar (Kang Tae-jun): *Ele solta a gravata dos seus pulsos, te dando a chance de fugir. Mas a mão dele desliza até o botão da sua camisa, pronto para desfazê-lo.* "Estou te dando a última chance de correr, secretária. Fique e sofra as consequências, ou saia da minha sala agora. Escolha."
+ESCOLHAS DA USUÁRIA:
+Opção A (Submissa) [Afinidade +1]: "Eu fico. Eu quero que você tire a minha camisa." -> [Aciona o Paywall Zeigarnik]
+Opção B (Provocativa) [Afinidade +1]: "Você fala demais. Tira logo." -> [Aciona o Paywall Zeigarnik]
+Opção C (Fria) [Afinidade -1]: "Eu não vou a lugar nenhum. Termine o que começou." -> [Aciona o Paywall Zeigarnik]

@@ -6,10 +6,12 @@
     <title>Dorama Brasil | Streaming de Doramas</title>
     <meta name="description" content="Assista aos melhores doramas legendados em portugues. Sua plataforma favorita de doramas coreanos, chineses e japoneses.">
     <meta name="theme-color" content="#FFFAFC">
+    <link rel="icon" type="image/png" href="img/Screenshot_4.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="k-whisper/css/style.css">
 </head>
 <body>
     <!-- Loading Screen -->
@@ -25,7 +27,7 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="logo">
-                <span class="logo-icon">&#127800;</span>
+                <img src="img/Screenshot_4.png" alt="Logo" class="logo-img">
                 <span class="logo-text">Dorama<span class="logo-accent">Brasil</span></span>
             </a>
 
@@ -42,6 +44,7 @@
                 <a href="#hero">Inicio</a>
                 <a href="#em-destaque">Destaque</a>
                 <a href="#catalogo">Catalogo</a>
+                <a href="#kwhisper" class="nav-kw">K-Whisper</a>
             </div>
 
             <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
@@ -62,6 +65,31 @@
                 <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                 Assistir Agora
             </button>
+        </div>
+        <button class="hero-nav hero-nav-left" id="hero-prev" aria-label="Anterior">
+            <svg viewBox="0 0 24 24" width="22" height="22"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="hero-nav hero-nav-right" id="hero-next" aria-label="Proximo">
+            <svg viewBox="0 0 24 24" width="22" height="22"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="hero-dots" id="hero-dots"></div>
+    </section>
+
+    <!-- Roleta -->
+    <section class="section roulette-section" id="roleta">
+        <div class="container">
+            <h2 class="section-title"><span class="section-icon">&#127922;</span> Escolha seu Dorama</h2>
+            <p class="roulette-subtitle">Clique em girar e descubra qual dorama assistir!</p>
+            <div class="roulette-wrapper">
+                <div class="roulette-pointer-wrap">
+                    <div class="roulette-pointer"></div>
+                </div>
+                <canvas id="roulette-canvas"></canvas>
+                <button class="roulette-spin-btn" id="roulette-spin">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.65 6.35A7.958 7.958 0 0012 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0112 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+                    Girar
+                </button>
+            </div>
         </div>
     </section>
 
@@ -90,6 +118,17 @@
             </div>
             <div class="category-tabs" id="category-tabs"></div>
             <div class="grid" id="catalog-grid"></div>
+        </div>
+    </section>
+
+    <!-- K-Whisper Chat -->
+    <section class="section kw-section" id="kwhisper">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"><span class="section-icon">&#128172;</span> K-Whisper</h2>
+                <span class="section-subtitle">Chat interativo com personagens</span>
+            </div>
+            <div id="kw-root" class="kw-host"></div>
         </div>
     </section>
 
@@ -143,6 +182,48 @@
         <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
     </button>
 
+    <!-- Premium Popup -->
+    <div class="premium-modal" id="premium-modal">
+        <div class="premium-backdrop"></div>
+        <div class="premium-box">
+            <img src="img/Screenshot_4.png" alt="" class="premium-logo">
+            <h3>Assista ao filme completo!</h3>
+            <p>Voce esta curtindo esse dorama? Para continuar assistindo e ter acesso ilimitado a todo o catalogo, adquira o acesso premium.</p>
+            <a href="https://pay.lowify.com.br/checkout.php?product_id=CPY14n" class="premium-cta" id="premium-cta">
+                Quero Acesso Completo
+            </a>
+            <button class="premium-skip" id="premium-skip">Talvez depois</button>
+        </div>
+    </div>
+
+    <!-- TikTok Player (Mobile) -->
+    <div class="tiktok-player" id="tiktok-player">
+        <button class="tiktok-close" id="tiktok-close">&#10005;</button>
+        <div class="tiktok-swipe-area" id="tiktok-swipe-area">
+            <div class="tiktok-video-wrap" id="tiktok-video-wrap">
+                <div class="tiktok-video-frame">
+                    <iframe id="tiktok-iframe" src="" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen playsinline></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="tiktok-info">
+            <span class="tiktok-badge" id="tiktok-badge"></span>
+            <h3 id="tiktok-title"></h3>
+            <p id="tiktok-channel"></p>
+        </div>
+        <div class="tiktok-nav">
+            <button class="tiktok-nav-btn" id="tiktok-prev" aria-label="Anterior">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path d="M18 15l-6-6-6 6" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="tiktok-nav-btn" id="tiktok-next" aria-label="Proximo">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+        </div>
+        <p class="tiktok-swipe-hint">Deslize para cima ou para baixo</p>
+    </div>
+
     <!-- Back to Top -->
     <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
         <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 19V5m0 0l-6 6m6-6l6 6" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -152,7 +233,7 @@
     <footer class="footer">
         <div class="container footer-content">
             <div class="footer-logo">
-                <span class="logo-icon">&#127800;</span>
+                <img src="img/Screenshot_4.png" alt="Logo" class="logo-img">
                 <span class="logo-text">Dorama<span class="logo-accent">Brasil</span></span>
             </div>
             <p class="footer-text">Sua plataforma favorita de doramas legendados</p>
@@ -162,5 +243,18 @@
 
     <script src="js/data.js"></script>
     <script src="js/app.js"></script>
+
+    <!-- K-Whisper -->
+    <script src="k-whisper/js/data.js"></script>
+    <script src="k-whisper/js/engine.js"></script>
+    <script>
+        KWhisper.init({
+            container: '#kw-root',
+            onRequestPause: function () {},
+            onRequestResume: function () {}
+        });
+        KWhisper.loadStory(KW_DEMO_STORY, KW_PAYWALL_CONFIG);
+        KWhisper.open('node_001');
+    </script>
 </body>
 </html>

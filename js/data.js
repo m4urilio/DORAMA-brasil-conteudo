@@ -45,7 +45,6 @@ var CATALOG = [
     { id: 'MhspJaLxwe4', cat: 'comedia' },
     { id: 'bthk1OhddGc', cat: 'comedia' },
     { id: '1RNv2w2_zvA', cat: 'comedia' },
-    { id: 'fBlq60_lQjc', cat: 'comedia' },
     { id: '1kT9EIsAras', cat: 'comedia' },
     { id: 'mg-c_c9thu8', cat: 'comedia' },
     { id: 'tBkBV_lwKGQ', cat: 'comedia' },
@@ -169,7 +168,7 @@ async function fetchVideoInfo(id) {
 }
 
 async function loadCatalog() {
-    var cacheKey = 'dorama_catalog_v3';
+    var cacheKey = 'dorama_catalog_v4';
     var cached = localStorage.getItem(cacheKey);
     if (cached) {
         try {
