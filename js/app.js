@@ -83,7 +83,6 @@ function renderHero() {
         resetHeroInterval();
     });
 
-    startHeroInterval();
 }
 
 function updateHeroContent(slideIndex) {
@@ -474,9 +473,6 @@ function setupBackToTop() {
    HERO TIMER + PREMIUM UPSELL
    ============================================ */
 function openHeroPlayer(index) {
-    isHeroVideo = true;
-    clearHeroTimer();
-    heroTimer = setTimeout(showPremiumPopup, 10 * 60 * 1000);
     openPlayer(index);
 }
 

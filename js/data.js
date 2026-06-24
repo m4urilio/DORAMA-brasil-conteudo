@@ -139,6 +139,10 @@ var CATALOG = [
     { id: '5NYpswU1fxE', cat: 'historico' }
 ];
 
+var TITLE_OVERRIDES = {
+    'Esx2H_KDkGM': 'O Ceo Milion\u00e1rio e a Amante Secreta...'
+};
+
 function getCategoryInfo(catId) {
     for (var i = 0; i < CATEGORIES.length; i++) {
         if (CATEGORIES[i].id === catId) return CATEGORIES[i];
@@ -174,6 +178,9 @@ async function loadCatalog() {
         try {
             var parsed = JSON.parse(cached);
             if (Date.now() - parsed.timestamp < 7 * 24 * 60 * 60 * 1000) {
+                parsed.data.forEach(function (v) {
+                    if (TITLE_OVERRIDES[v.id]) v.title = TITLE_OVERRIDES[v.id];
+                });
                 return parsed.data;
             }
         } catch (e) { /* ignore bad cache */ }
@@ -193,6 +200,10 @@ async function loadCatalog() {
     });
 
     var data = await Promise.all(promises);
+
+    data.forEach(function (v) {
+        if (TITLE_OVERRIDES[v.id]) v.title = TITLE_OVERRIDES[v.id];
+    });
 
     localStorage.setItem(cacheKey, JSON.stringify({
         data: data,
