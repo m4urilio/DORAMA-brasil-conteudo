@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="k-whisper/css/style.css">
+
 </head>
 <body>
     <!-- Loading Screen -->
@@ -44,7 +44,7 @@
                 <a href="#hero">Inicio</a>
                 <a href="#em-destaque">Destaque</a>
                 <a href="#catalogo">Catalogo</a>
-                <a href="#kwhisper" class="nav-kw">K-Whisper</a>
+
             </div>
 
             <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
@@ -121,16 +121,7 @@
         </div>
     </section>
 
-    <!-- K-Whisper Chat -->
-    <section class="section kw-section" id="kwhisper">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title"><span class="section-icon">&#128172;</span> K-Whisper</h2>
-                <span class="section-subtitle">Chat interativo com personagens</span>
-            </div>
-            <div id="kw-root" class="kw-host"></div>
-        </div>
-    </section>
+
 
     <!-- Modal Player -->
     <div class="modal" id="modal">
@@ -182,19 +173,7 @@
         <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
     </button>
 
-    <!-- Premium Popup -->
-    <div class="premium-modal" id="premium-modal">
-        <div class="premium-backdrop"></div>
-        <div class="premium-box">
-            <img src="img/Screenshot_4.png" alt="" class="premium-logo">
-            <h3>Assista ao filme completo!</h3>
-            <p>Voce esta curtindo esse dorama? Para continuar assistindo e ter acesso ilimitado a todo o catalogo, adquira o acesso premium.</p>
-            <a href="https://pay.lowify.com.br/checkout.php?product_id=CPY14n" class="premium-cta" id="premium-cta">
-                Quero Acesso Completo
-            </a>
-            <button class="premium-skip" id="premium-skip">Talvez depois</button>
-        </div>
-    </div>
+
 
     <!-- TikTok Player (Mobile) -->
     <div class="tiktok-player" id="tiktok-player">
@@ -244,17 +223,5 @@
     <script src="js/data.js"></script>
     <script src="js/app.js"></script>
 
-    <!-- K-Whisper -->
-    <script src="k-whisper/js/data.js"></script>
-    <script src="k-whisper/js/engine.js"></script>
-    <script>
-        KWhisper.init({
-            container: '#kw-root',
-            onRequestPause: function () {},
-            onRequestResume: function () {}
-        });
-        KWhisper.loadStory(KW_DEMO_STORY, KW_PAYWALL_CONFIG);
-        KWhisper.open('node_001');
-    </script>
 </body>
 </html>

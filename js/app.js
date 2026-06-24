@@ -15,9 +15,6 @@ var heroVideoIndices = [];
 var heroSlideIndex = 0;
 var heroInterval = null;
 
-/* Hero timer (premium upsell) */
-var heroTimer = null;
-var isHeroVideo = false;
 
 document.addEventListener('DOMContentLoaded', init);
 
@@ -41,7 +38,6 @@ async function init() {
     setupSupport();
     setupRoulette();
     setupTikTok();
-    setupPremiumPopup();
 
     document.getElementById('loading').classList.add('hidden');
 }
@@ -293,7 +289,6 @@ function closeModal() {
     playerIframe.src = '';
     modalEl.classList.remove('active');
     document.body.style.overflow = '';
-    clearHeroTimer();
 }
 
 function renderSuggestions(currentIndex) {
@@ -466,41 +461,8 @@ function setupBackToTop() {
     });
 }
 
-/* ============================================
-   HERO TIMER + PREMIUM UPSELL
-   ============================================ */
 function openHeroPlayer(index) {
     openPlayer(index);
-}
-
-function clearHeroTimer() {
-    if (heroTimer) {
-        clearTimeout(heroTimer);
-        heroTimer = null;
-    }
-    isHeroVideo = false;
-}
-
-function showPremiumPopup() {
-    playerIframe.src = '';
-    document.getElementById('tiktok-iframe').src = '';
-    document.getElementById('premium-modal').classList.add('active');
-    heroTimer = null;
-}
-
-function closePremiumPopup() {
-    document.getElementById('premium-modal').classList.remove('active');
-    playerIframe.src = '';
-    modalEl.classList.remove('active');
-    document.getElementById('tiktok-iframe').src = '';
-    document.getElementById('tiktok-player').classList.remove('active');
-    document.body.style.overflow = '';
-    clearHeroTimer();
-}
-
-function setupPremiumPopup() {
-    document.getElementById('premium-skip').addEventListener('click', closePremiumPopup);
-    document.querySelector('.premium-backdrop').addEventListener('click', closePremiumPopup);
 }
 
 /* ============================================
@@ -762,7 +724,6 @@ function closeTikTokPlayer() {
     document.getElementById('tiktok-iframe').src = '';
     document.getElementById('tiktok-player').classList.remove('active');
     document.body.style.overflow = '';
-    clearHeroTimer();
 }
 
 function loadTikTokVideo() {
