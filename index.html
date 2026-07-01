@@ -147,24 +147,104 @@
         </div>
     </div>
 
-    <!-- Support Modal -->
+    <!-- Support FAQ Modal -->
     <div class="support-modal" id="support-modal">
         <div class="support-backdrop"></div>
         <div class="support-box">
             <button class="support-close" id="support-close" aria-label="Fechar">&#10005;</button>
-            <div class="support-icon-wrap">
-                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+
+            <!-- FAQ View -->
+            <div class="support-view" id="support-faq">
+                <div class="support-icon-wrap">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                </div>
+                <h3>Central de Ajuda</h3>
+                <p>Selecione uma opcao abaixo:</p>
+                <div class="faq-list">
+                    <button class="faq-item" data-faq="0"><span>Como acesso minha conta?</span><svg viewBox="0 0 24 24" width="16" height="16"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="faq-answer" id="faq-answer-0">Voce pode acessar sua conta clicando em "Entrar" no canto superior direito do site. Caso tenha esquecido sua senha, clique em "Esqueci minha senha" para redefini-la.</div>
+
+                    <button class="faq-item" data-faq="1"><span>Quais formas de pagamento sao aceitas?</span><svg viewBox="0 0 24 24" width="16" height="16"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="faq-answer" id="faq-answer-1">Aceitamos cartao de credito, cartao de debito, Pix e boleto bancario. Todas as transacoes sao processadas em ambiente seguro.</div>
+
+                    <button class="faq-item" data-faq="2"><span>Como altero meu plano?</span><svg viewBox="0 0 24 24" width="16" height="16"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="faq-answer" id="faq-answer-2">Para alterar seu plano, acesse "Minha Conta" > "Assinatura" e escolha o novo plano desejado. A mudanca sera aplicada no proximo ciclo de cobranca.</div>
+
+                    <button class="faq-item" data-faq="3"><span>Posso assistir em mais de um dispositivo?</span><svg viewBox="0 0 24 24" width="16" height="16"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="faq-answer" id="faq-answer-3">Sim! Dependendo do seu plano, voce pode assistir em ate 3 dispositivos simultaneamente. Acesse as configuracoes da sua conta para verificar.</div>
+
+                    <button class="faq-item" data-faq="4"><span>Como entro em contato com o suporte?</span><svg viewBox="0 0 24 24" width="16" height="16"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <div class="faq-answer" id="faq-answer-4">Voce pode entrar em contato pelo e-mail suporteaocliente0012@gmail.com. Responderemos em ate 24 horas.</div>
+
+                    <button class="faq-item faq-refund-item" id="faq-refund-btn"><span>Quero entrar com um pedido de reembolso</span><svg viewBox="0 0 24 24" width="16" height="16"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                </div>
             </div>
-            <h3>Precisa de ajuda?</h3>
-            <p>Envie um e-mail explicando seu problema para:</p>
-            <div class="support-email-box">
-                <span id="support-email">suporteaocliente0012@gmail.com</span>
-                <button class="support-copy-btn" id="support-copy-btn" aria-label="Copiar e-mail">
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
-                    <span id="copy-label">Copiar</span>
-                </button>
+
+            <!-- Refund Form View -->
+            <div class="support-view" id="support-refund" style="display:none">
+                <button class="support-back" id="support-back"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Voltar</button>
+                <h3>Pedido de Reembolso</h3>
+                <form id="refund-form">
+                    <div class="refund-field">
+                        <label>Qual o motivo principal do reembolso?</label>
+                        <select id="refund-reason" required>
+                            <option value="" disabled selected>Selecione...</option>
+                            <option value="nao-gostei">Nao gostei do conteudo</option>
+                            <option value="problemas-tecnicos">Problemas tecnicos</option>
+                            <option value="cobrado-errado">Fui cobrado incorretamente</option>
+                            <option value="nao-uso">Nao utilizo mais o servico</option>
+                            <option value="outro">Outro motivo</option>
+                        </select>
+                    </div>
+                    <div class="refund-field">
+                        <label>Ha quanto tempo voce e assinante?</label>
+                        <select id="refund-time" required>
+                            <option value="" disabled selected>Selecione...</option>
+                            <option value="menos-1-mes">Menos de 1 mes</option>
+                            <option value="1-3-meses">1 a 3 meses</option>
+                            <option value="3-6-meses">3 a 6 meses</option>
+                            <option value="mais-6-meses">Mais de 6 meses</option>
+                        </select>
+                    </div>
+                    <div class="refund-field">
+                        <label>Voce tentou resolver o problema antes?</label>
+                        <select id="refund-tried" required>
+                            <option value="" disabled selected>Selecione...</option>
+                            <option value="sim">Sim, mas nao consegui</option>
+                            <option value="nao">Nao tentei</option>
+                        </select>
+                    </div>
+                    <div class="refund-field">
+                        <label>Voce recomendaria nosso servico?</label>
+                        <select id="refund-recommend" required>
+                            <option value="" disabled selected>Selecione...</option>
+                            <option value="sim">Sim</option>
+                            <option value="talvez">Talvez</option>
+                            <option value="nao">Nao</option>
+                        </select>
+                    </div>
+                    <div class="refund-field">
+                        <label>Informacoes adicionais (opcional)</label>
+                        <textarea id="refund-info" rows="3" placeholder="Descreva mais detalhes se desejar..."></textarea>
+                    </div>
+                    <button type="submit" class="refund-submit-btn">Reembolsar</button>
+                </form>
             </div>
-            <p class="support-note">Responderemos em ate 24 horas.</p>
+
+            <!-- Loading View -->
+            <div class="support-view" id="support-loading" style="display:none">
+                <div class="refund-loading-spinner"></div>
+                <p class="refund-loading-text">Processando seu pedido de reembolso...</p>
+            </div>
+
+            <!-- Success View -->
+            <div class="support-view" id="support-success" style="display:none">
+                <div class="refund-success-icon">&#10003;</div>
+                <h3>Pedido Recebido!</h3>
+                <p>Seu reembolso sera efetuado em ate <strong>7 dias uteis</strong>.</p>
+                <p class="support-note">Voce recebera uma confirmacao por e-mail.</p>
+                <button class="refund-close-btn" id="refund-close-btn">Fechar</button>
+            </div>
         </div>
     </div>
 

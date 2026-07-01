@@ -419,11 +419,29 @@ function setupSupport() {
     var modal = document.getElementById('support-modal');
     var closeBtn = document.getElementById('support-close');
     var backdrop = modal.querySelector('.support-backdrop');
-    var copyBtn = document.getElementById('support-copy-btn');
-    var emailEl = document.getElementById('support-email');
-    var copyLabel = document.getElementById('copy-label');
+    var faqView = document.getElementById('support-faq');
+    var refundView = document.getElementById('support-refund');
+    var loadingView = document.getElementById('support-loading');
+    var successView = document.getElementById('support-success');
+    var refundBtn = document.getElementById('faq-refund-btn');
+    var backBtn = document.getElementById('support-back');
+    var refundForm = document.getElementById('refund-form');
+    var refundCloseBtn = document.getElementById('refund-close-btn');
+
+    function showView(view) {
+        [faqView, refundView, loadingView, successView].forEach(function(v) {
+            v.style.display = 'none';
+        });
+        view.style.display = 'block';
+    }
 
     function openSupport() {
+        showView(faqView);
+        // Reset FAQ answers
+        document.querySelectorAll('.faq-answer').forEach(function(a) { a.classList.remove('active'); });
+        document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('active'); });
+        // Reset form
+        if (refundForm) refundForm.reset();
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
     }
@@ -437,13 +455,44 @@ function setupSupport() {
     closeBtn.addEventListener('click', closeSupport);
     backdrop.addEventListener('click', closeSupport);
 
-    copyBtn.addEventListener('click', function () {
-        var email = emailEl.textContent;
-        navigator.clipboard.writeText(email).then(function () {
-            copyLabel.textContent = 'Copiado!';
-            setTimeout(function () { copyLabel.textContent = 'Copiar'; }, 2000);
+    // FAQ toggle
+    document.querySelectorAll('.faq-item[data-faq]').forEach(function(item) {
+        item.addEventListener('click', function() {
+            var id = this.getAttribute('data-faq');
+            var answer = document.getElementById('faq-answer-' + id);
+            var isActive = answer.classList.contains('active');
+            // Close all
+            document.querySelectorAll('.faq-answer').forEach(function(a) { a.classList.remove('active'); });
+            document.querySelectorAll('.faq-item[data-faq]').forEach(function(i) { i.classList.remove('active'); });
+            // Toggle current
+            if (!isActive) {
+                answer.classList.add('active');
+                this.classList.add('active');
+            }
         });
     });
+
+    // Open refund form
+    refundBtn.addEventListener('click', function() {
+        showView(refundView);
+    });
+
+    // Back to FAQ
+    backBtn.addEventListener('click', function() {
+        showView(faqView);
+    });
+
+    // Submit refund
+    refundForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        showView(loadingView);
+        setTimeout(function() {
+            showView(successView);
+        }, 5000);
+    });
+
+    // Close after success
+    refundCloseBtn.addEventListener('click', closeSupport);
 }
 
 /* ---------- Back to Top ---------- */
